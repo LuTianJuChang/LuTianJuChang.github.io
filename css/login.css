@@ -1,0 +1,69 @@
+@import url('public.css');
+.container{
+    height:100%;
+}
+.form-area{
+    background-color: rgb(255,255,255,.2);
+    position: absolute;
+    width:350px;
+    height:350px;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.form-area .form-item{
+    height: 50px;
+    text-align: center;
+    margin: 20px 0;
+}
+.form-area .form-item input[type='text'],.form-area .form-item input[type='password']{
+    width:250px;
+    height:50px;
+    background: transparent;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding-left: 10px;
+    color:#fff;
+    font-size:13px; 
+}
+
+.form-area .form-item input[type='text']::placeholder,.form-area .form-item input[type='password']::placeholder{
+    color:rgba(255,255,255,.5)
+}
+
+.form-area .form-item input[type='text']:focus,.form-area .form-item input[type='password']:focus{
+    border: 1px solid #fff;
+    transition: 1.5s;
+}
+
+
+.form-area .form-item .title{
+    position: relative;
+    margin-top: 23px;
+}
+
+.form-area .form-item .title span{
+    font-size: 2.5em;
+    color:#fff;
+}
+
+.form-area .form-item button[type="submit"]{
+    width:180px;
+    height: 38px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 6px;
+    color:#fff
+}
+
+.form-area .form-item button[type="submit"]:focus{
+    background-color: #eee;
+    transition: 1s;
+}
+
